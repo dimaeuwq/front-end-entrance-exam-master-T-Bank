@@ -1,0 +1,839 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 979px; 
+    margin: 22px auto; 
+    padding: 22px; 
+    background-color: #fff;
+    box-shadow: 0 0 11px rgba(0, 0, 0, 0.1); 
+    display: flex;
+    flex-direction: column;
+    border-radius: 11px; 
+}
+
+.profile {
+    display: flex;
+    align-items: flex-start; 
+    gap: 38.5px; 
+    flex-wrap: wrap; 
+}
+
+.profile-pic-container {
+    position: relative;
+}
+
+.profile-pic {
+    width: 209px; 
+    height: 218px; 
+    border-radius: 22px; 
+    object-fit: cover;
+}
+
+.profile-info {
+    padding: 22px; 
+    background-color: #f0f0f0;
+    border-radius: 22px; 
+    width: 165px; 
+    word-break: break-word; 
+    overflow-wrap: break-word; 
+    white-space: normal; 
+    transition: all 0.3s ease;
+}
+
+.profile-info h1 {
+    margin: 5.5px 0; 
+    font-size: 17.6px; 
+    font-weight: normal;
+    word-break: break-word; 
+    overflow-wrap: break-word; 
+    white-space: normal; 
+    transition: all 0.3s ease, color 0.3s ease, opacity 0.3s ease; 
+}
+
+.profile-info h2 {
+    margin: 77px 0 0 0; 
+    font-size: 26.4px; 
+    transition: all 0.3s ease, color 0.3s ease, opacity 0.3s ease; 
+}
+
+.profile-info h3 {
+    margin: 5.5px 0; 
+    color: #666;
+    font-size: 19.8px; 
+    padding-top: 5.5px; 
+    transition: all 0.3s ease, color 0.3s ease, opacity 0.3s ease; 
+}
+
+.profile-info h1:hover,
+.profile-info h2:hover,
+.profile-info h3:hover {
+    color: orchid; 
+    opacity: 0.8; 
+}
+
+.languages {
+    padding: 27.5px; 
+    background-color: #f0f0f0;
+    border-radius: 22px; 
+    width: 400px; 
+    word-break: break-word; 
+    overflow-wrap: break-word; 
+    white-space: normal; 
+    transition: all 0.3s ease; 
+}
+
+.languages h3 {
+    margin-top: -10px;
+    margin-bottom: 33px; 
+    font-size: 27.5px; 
+    transition: all 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.languages h3:hover {
+    color: orchid; 
+}
+
+.language {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12.5px; 
+}
+
+.language-name {
+    flex: 1;
+    font-size: 17.6px; 
+    word-break: break-word; 
+    overflow-wrap: break-word; 
+    white-space: normal; 
+    transition: all 0.3s ease, color 0.3s ease, opacity 0.3s ease;
+}
+
+.language-name:hover {
+    color: orchid; 
+    opacity: 0.8; 
+}
+
+.progress-bar {
+    width: 100%; 
+    max-width: 300px;
+    height: 19.8px; 
+    background-color: #f0f0f0;
+    border-radius: 5.5px; 
+    overflow: hidden;
+    margin-left: 11px; 
+}
+
+.progress {
+    height: 100%;
+    background-color: #28d979;
+    border-radius: 5.5px; 
+    margin-left: 33px; 
+}
+
+.progress-bar:hover {
+    transform: scale(1.05);
+}
+
+.tools {
+    max-width: 148.5px; 
+    max-height: 599.5px; 
+    margin: 34.65px; 
+    flex: 1;
+    padding: 22px; 
+    background-color: #f0f0f0;
+    box-shadow: 0 0 11px rgba(0, 0, 0, 0.1); 
+    border-radius: 22px; 
+    transition: all 0.3s ease;
+}
+
+.tools h3 {
+    margin-top: 0;
+    margin-bottom: 33px; 
+    font-size: 26.4px; 
+    text-align: left;
+    transition: all 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.tools h3:hover {
+    color: orchid; 
+}
+
+.tool-category {
+    max-width: 148.5px; 
+    background-color: #fff;
+    padding: 21.45px; 
+    border-radius: 11px; 
+    margin-bottom: 24.8px; 
+    text-align: center;
+    transition: all 0.3s ease, transform 0.3s ease;
+}
+
+.category-header {
+    background-color: #000;
+    color: #fff;
+    padding: 4.95px 9.9px; 
+    border-radius: 22px; 
+    font-size: 9.8px; 
+    text-align: center;
+    transform: translateY(-150%);
+    display: inline-block;
+    margin-bottom: 9.9px; /* Увеличено на 10% */
+    transition: all 0.3s ease, transform 0.3s ease;
+}
+
+.category-header:hover {
+    color: orchid; 
+    opacity: 0.8; 
+}
+
+.tool-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9.9px; 
+    justify-content: flex-start;
+    margin-top: -29.7px; 
+    transition: all 0.3s ease;
+}
+
+.tool-icons img {
+    width: 40px; 
+    height: 40px; 
+    margin-bottom: 5px;
+    border-radius: 11px; 
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+.tool-icons img:hover {
+    transform: scale(1.1); 
+}
+
+.tool-icons img:nth-child(odd) {
+    margin-right: auto;
+}
+
+.tool-icons img:nth-child(even) {
+    margin-left: auto;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 11px;
+    flex-wrap: wrap; 
+}
+
+.experience {
+    max-width: 671px;
+    max-height: 595.5px;
+    flex: 2;
+    padding: 22px;
+    background-color: #f0f0f0;
+    box-shadow: 0 0 11px rgba(0, 0, 0, 0.1);
+    border-radius: 22px;
+    margin-top: 38.5px;
+    margin-bottom: 22px;
+    word-break: break-word; 
+    overflow-wrap: break-word; 
+    white-space: normal; 
+    transition: all 0.3s ease;
+}
+
+.experience h3 {
+    margin-top: 0;
+    margin-bottom: 33px;
+    font-size: 26.4px;
+    transition: all 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.experience h3:hover {
+    color: orchid; 
+}
+
+.experience-item {
+    padding: 16.5px;
+    margin-bottom: 16.5px;
+    border-radius: 11px;
+    word-break: break-word; 
+    overflow-wrap: break-word; 
+    white-space: normal; 
+    transition: all 0.3s ease;
+}
+
+.experience-item.green {
+    background-color: #28d979;
+    color: #fff;
+}
+
+.experience-item.green:hover {
+    transform: scale(1.05);
+}
+
+.experience-item.white {
+    background-color: #fff;
+    color: #000;
+    border: 1.1px solid #e0e0e0;
+}
+
+.experience-item.white:hover {
+    transform: scale(1.05);
+}
+
+.experience-item.gray {
+    background-color: #fff;
+    color: #000;
+}
+
+.experience-item.gray:hover {
+    transform: scale(1.05);
+}
+
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.date-range {
+    font-size: 15.4px;
+    word-break: break-word; 
+    overflow-wrap: break-word; 
+    white-space: normal; 
+    transition: all 0.3s ease, color 0.3s ease, opacity 0.3s ease;
+}
+
+.date-range:hover {
+    color: orchid; 
+    opacity: 0.8; 
+}
+
+.badge {
+    background-color: #4ab050;
+    color: #ddf163;
+    padding: 5.5px 11px;
+    border-radius: 22px;
+    font-size: 13.2px;
+    transition: all 0.3s ease, color 0.3s ease, opacity 0.3s ease;
+}
+
+.role {
+    font-size: 19.8px;
+    color: #000;
+    margin-top: 22px;
+    word-break: break-word; 
+    overflow-wrap: break-word; 
+    white-space: normal; 
+    transition: all 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.role:hover {
+    color: orchid; 
+}
+
+.roleW {
+    font-size: 22px;
+    color: white;
+    margin-top: 22px;
+    word-break: break-word; 
+    overflow-wrap: break-word; 
+    white-space: normal; 
+    transition: all 0.3s ease, color 0.3s ease, transform 0.3s ease; 
+}
+
+.roleW:hover {
+    color: orchid; 
+}
+
+.company {
+    font-size: 15.4px;
+    color: #3f3d3d;
+    word-break: break-word; 
+    overflow-wrap: break-word; 
+    white-space: normal; 
+    transition: all 0.3s ease, color 0.3s ease, opacity 0.3s ease; 
+}
+
+.company:hover {
+    color: orchid; 
+    opacity: 0.8; 
+}
+
+.companyW {
+    font-size: 18.7px;
+    color: #ebf9f2;
+    word-break: break-word; 
+    overflow-wrap: break-word; 
+    white-space: normal; 
+    transition: all 0.3s ease, color 0.3s ease, opacity 0.3s ease; 
+}
+
+.companyW:hover {
+    color: orchid; 
+    opacity: 0.8; 
+}
+
+.experience-item ul {
+    padding-left: 269.5px;
+    margin-top: -44px;
+    margin-bottom: -5.5px;
+}
+
+.experience-item ul li {
+    margin: 5.5px 0;
+    font-size: 14.3px;
+    word-break: break-word; 
+    overflow-wrap: break-word; 
+    white-space: normal; 
+    transition: all 0.3s ease, color 0.3s ease, opacity 0.3s ease;
+}
+
+.experience-item ul li:hover {
+    color: orchid; 
+    opacity: 0.8; 
+}
+
+.clue {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.education-interests-container {
+    display: flex;
+    gap: 45px;
+    flex-wrap: wrap; 
+}
+
+.education {
+    margin-top: 11px;
+    margin-bottom: 0px;
+    background-color: #f0f0f0;
+    padding: 16.5px;
+    border-radius: 22px;
+    box-shadow: 0 0 11px rgba(0, 0, 0, 0.1);
+    max-width: 450px;
+    width: 100%;
+    max-height: 540px;
+    word-break: break-word; 
+    overflow-wrap: break-word; 
+    white-space: normal; 
+    transition: all 0.3s ease; 
+}
+
+.education h2 {
+    margin-top: 0px;
+    font-size: 26.4px;
+    margin-bottom: 33px;
+    transition: all 0.3s ease, color 0.3s ease, transform 0.3s ease; 
+}
+
+
+.education h2:hover {
+    color: orchid; 
+}
+
+.education-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 16.5px;
+    padding-bottom: 9.5px;
+    box-shadow: 0 0 11px rgba(0, 0, 0, 0.1);
+    word-break: break-word; 
+    overflow-wrap: break-word; 
+    white-space: normal; 
+    transition: all 0.3s ease, transform 0.3s ease; 
+}
+
+.card:hover {
+    transform: scale(1.05); 
+}
+
+.green-card {
+    background-color: #28d979;
+    color: white;
+    transition: all 0.3s ease, transform 0.3s ease; 
+}
+
+.green-card:hover {
+    transform: scale(1.05); 
+}
+
+.year-heart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 17.6px;
+    transition: all 0.3s ease; 
+}
+
+.year-heart:hover {
+    color: orchid; 
+    opacity: 0.8; 
+}
+
+.year {
+    font-size: 17.6px;
+    margin-bottom: 11px;
+    word-break: break-word; 
+    overflow-wrap: break-word; 
+    white-space: normal; 
+    transition: all 0.3s ease, color 0.3s ease, opacity 0.3s ease; 
+    color: black;
+}
+
+.year:hover {
+    color: orchid; 
+    opacity: 0.8; 
+}
+
+h3 {
+    padding-top: 11px;
+    margin: 5.5px 0;
+    font-size: 17.6px;
+    word-break: break-word; 
+    overflow-wrap: break-word; 
+    white-space: normal; 
+    transition: all 0.3s ease, color 0.3s ease, transform 0.3s ease; 
+}
+
+h3:hover {
+    color: orchid; 
+}
+
+
+
+p {
+    padding-top: 0px;
+    margin: 5.5px 0;
+    font-size: 15.4px;
+    word-break: break-word; 
+    overflow-wrap: break-word; 
+    white-space: normal; 
+    transition: all 0.3s ease, color 0.3s ease, opacity 0.3s ease; 
+}
+
+p:hover {
+    color: orchid; 
+    opacity: 0.8; 
+}
+
+.institute {
+    font-weight: bold;
+    margin-top: 11px;
+    word-break: break-word; 
+    overflow-wrap: break-word; 
+    white-space: normal; 
+    transition: all 0.3s ease, color 0.3s ease, opacity 0.3s ease; 
+}
+
+.institute:hover {
+    color: orchid; 
+    opacity: 0.8; 
+}
+
+.heart {
+    font-size: 19.8px;
+    transition: all 0.3s ease, color 0.3s ease, opacity 0.3s ease; 
+}
+
+.heart:hover {
+    color: orchid; 
+    opacity: 0.8; 
+}
+
+.interests-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 22px;
+}
+
+.interests {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    max-width: 382px;
+    flex: 1;
+    padding: 16.5px;
+    background-color: #f0f0f0;
+    box-shadow: 0 0 11px rgba(0, 0, 0, 0.1);
+    border-radius: 22px;
+    word-break: break-word; 
+    overflow-wrap: break-word; 
+    white-space: normal; 
+    transition: all 0.3s ease; 
+}
+
+.interest {
+    background-color: #fff;
+    padding: 7.5px 11px;
+    border-radius: 16.5px;
+    font-size: 18px;
+    text-align: center;
+    display: inline-block;
+    margin: 5.5px;
+    transition: all 0.3s ease, transform 0.3s ease; 
+}
+
+.interest:hover {
+    transform: scale(1.05); 
+    color: orchid;
+}
+
+.interests h2 {
+    margin-top: 0px;
+    font-size: 26.4px;
+    margin-bottom: 33px;
+    transition: all 0.3s ease, color 0.3s ease, transform 0.3s ease; 
+}
+
+.interests h2:hover {
+    color: orchid; 
+}
+
+.lets {
+    margin-top: 10px;
+    width: 420px;
+    height: 70px;
+    padding: 40px 0;
+    background-color: black;
+    color: #fff;
+    border-radius: 20px;
+    align-self: flex-start;
+    text-align: left;
+    transition: all 0.3s ease; 
+}
+
+.lets h3 {
+    font-size: 22px;
+    margin-left: 15px; 
+    margin-top: -25px;
+    transition: all 0.3s ease, color 0.3s ease, transform 0.3s ease; 
+}
+
+.lets h3:hover {
+    color: orchid; 
+}
+
+.lets p {
+    font-size: 16px;
+    margin-left: 15px; 
+    margin-top: 35px;
+    transition: all 0.3s ease, color 0.3s ease, opacity 0.3s ease;
+}
+
+.lets p:hover {
+    color: orchid; 
+    opacity: 0.8; 
+}
+
+
+.download-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 20px 20px;
+    background-color: #28d979;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+    text-align: center;
+}
+
+.download-btn:hover {
+    background-color: black;
+    transform: scale(1.05); 
+}
+
+.download-btn:hover {
+    background-color: #218c63;
+}
+
+.notification {
+    position: absolute;
+    padding: 10px 20px;
+    background-color: orchid;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 1000;
+    font-size: 14px;
+}
+
+
+.notification.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.ripple {
+    position: relative;
+    overflow: hidden;
+}
+
+.ripple-wave {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.3);
+    transform: scale(0);
+    animation: ripple 0.3s linear;
+    pointer-events: none;
+    width: var(--ripple-size);
+    height: var(--ripple-size);
+    left: var(--ripple-x);
+    top: var(--ripple-y);
+}
+
+@keyframes ripple {
+    to {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+
+
+
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+    .profile {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .profile-info {
+        padding: 10px 0;
+    }
+    .main-content {
+        flex-direction: column;
+    }
+    .experience, .tools {
+        flex: none;
+        width: 100%;
+    }
+    .education-interests-container {
+        flex-direction: column;
+    }
+    .education, .interests-container {
+        flex: none;
+        width: 100%;
+    }
+    .experience-item, .card {
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    h2 span {
+        font-size: 30px;
+    }
+    h3 {
+        font-size: 18px;
+    }
+    .language-name, .date-range, .roleW, .role, .companyW, .company {
+        font-size: 16px;
+    }
+    .progress-bar, .progress {
+        height: 10px;
+    }
+    .tool-icons img {
+        width: 30px;
+        height: 30px;
+    }
+    .category-header {
+        font-size: 18px;
+    }
+    .card {
+        padding: 10px;
+    }
+    .year, .heart {
+        font-size: 16px;
+    }
+    .interest {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+    .lets h3 {
+        font-size: 18px;
+    }
+    .lets p {
+        font-size: 16px;
+    }
+}
+
+@media print {
+    * {
+        background: none !important;
+        color: black !important;
+        filter: none !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+        -webkit-box-shadow: none !important;
+        -moz-box-shadow: none !important;
+    }
+
+    body {
+        background: white !important;
+    }
+
+    .container, .profile-info, .languages, .tools, .experience, .education, .interests {
+        background: transparent !important;
+        box-shadow: none !important;
+    }
+
+    img, .profile-pic, .tool-icons img {
+        filter: none !important;
+        -webkit-filter: none !important;
+    }
+
+    .experience-item {
+        background: transparent !important;
+    }
+
+    .badge, .date-range, .progress-bar, .progress {
+        background: transparent !important;
+    }
+
+    .download-btn, .notification, .ripple {
+        display: none !important;
+    }
+
+    .progress-bar, .progress {
+        background-color: #e0e0e0 !important;
+    }
+
+    .print-hidden {
+        display: none !important;
+    }
+    
+}
+
+
+
